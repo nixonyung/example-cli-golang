@@ -1,0 +1,1 @@
+ANS=42 go run main.go games guessing

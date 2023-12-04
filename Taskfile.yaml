@@ -1,0 +1,23 @@
+version: "3"
+dotenv: [".env"]
+
+tasks:
+  test:
+    cmds:
+      - go test ./... -v
+      - |
+        for test_file in $(find test -name '.run'); do
+          root="$(dirname "$test_file")"
+          echo "running $test_file"
+
+          if [[ -f "$root"/.in ]]; then
+            ECHO=1 bash "$test_file" \
+              <"$root"/.in \
+              1>"$root"/.out \
+              2>"$root"/.log &
+          else
+            ECHO=1 bash "$test_file" \
+              1>"$root"/.out \
+              2>"$root"/.log &
+          fi
+        done

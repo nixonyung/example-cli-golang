@@ -1,0 +1,8 @@
+go run main.go tools person_generator \
+  --name "test" \
+  --birthday "2000-01-01" \
+  --address.room "Room 123" \
+  --address.building "Building A" \
+  --address.street "Street 123" \
+  --address.district "Somewhere" \
+  --output test/tools/person_generator/1/out.csv

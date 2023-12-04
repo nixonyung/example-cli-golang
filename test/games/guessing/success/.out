@@ -1,0 +1,18 @@
+Enter an integer between 1 to 100: -1
+invalid range
+Enter an integer between 1 to 100: 101
+invalid range
+Enter an integer between 1 to 100: asdf
+invalid input: strconv.ParseInt: parsing "asdf": invalid syntax
+Enter an integer between 1 to 100: 50
+too large!
+Enter an integer between 1 to 49: 25
+too small!
+Enter an integer between 26 to 49: 37
+too small!
+Enter an integer between 38 to 49: 45
+too large!
+Enter an integer between 38 to 44: 40
+too small!
+Enter an integer between 41 to 44: 42
+bingo!!!

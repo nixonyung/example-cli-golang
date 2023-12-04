@@ -1,0 +1,20 @@
+Enter the original base (supported bases: 2,10,16): 3
+base 3 is unsupported!
+Enter the original base (supported bases: 2,10,16): 13
+base 13 is unsupported!
+Enter the original base (supported bases: 2,10,16): asdf
+invalid input: strconv.ParseInt: parsing "asdf": invalid syntax
+Enter the original base (supported bases: 2,10,16): 2
+Enter the original number: asdf
+invalid input: strconv.ParseInt: parsing "asdf": invalid syntax
+Enter the original number: 123
+invalid input: strconv.ParseInt: parsing "123": invalid syntax
+Enter the original number: 0011
+Enter the new base (supported bases: 2, 10, 16): 3
+base 3 is unsupported!
+Enter the new base (supported bases: 2, 10, 16): 13
+base 13 is unsupported!
+Enter the new base (supported bases: 2, 10, 16): asdf
+invalid input: strconv.ParseInt: parsing "asdf": invalid syntax
+Enter the new base (supported bases: 2, 10, 16): 10
+3 (base 2) = 3 (base 10)
